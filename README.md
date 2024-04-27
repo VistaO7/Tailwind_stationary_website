@@ -1,7 +1,6 @@
 # This is a stationary website that stores information only
 
 ## This was created as a practice project for learning the following technologies:
-
 >1. HTML
 >2. CSS
 >3. Tailwind
