@@ -14,17 +14,19 @@
   </head>
   <body>
     <nav>
-      <a href="./index.html"
-        ><img src="./images/company_logo.PNG" alt="Company Logo"
+      <a href="../index.html"
+        ><img src="../images/company_logo.PNG" alt="Company Logo"
       /></a>
-      <a href="./pages/about.html">ABOUT</a>
-      <a href="./pages/services.html">SERVICES</a>
-      <a href="./pages/contact.html">CONTACT</a>
+      <a href="../pages/about.html">ABOUT</a>
+      <a href="../pages/services.html">SERVICES</a>
+      <a href="../pages/contact.html">CONTACT</a>
     </nav>
     <h1>Contact form</h1>
     <!--Non functional code, just to showcase css, and tailwind-->
-    <form action="">
-      <label for="type">I am a:</label>
+    <form class="block">
+      <label for="type" class="block text-sm font-medium text-slate-700"
+        >I am a:</label
+      >
       <select id="type" name="type">
         <option value="none" hidden selected disabled>
           Please select an option
@@ -44,10 +46,15 @@
       <label for="other">I want to do another type of edification:</label>
       <input type="text" name="construction_type" />
       <h2>Contact Information</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
       <label for="email">Email</label>
-      <input type="email" id="email" name="contact_info" />
+      <input type="email" id="email" name="contact_info" class="" />
       <label for="tel">Cellphone</label>
       <input type="tel" id="tel" name="contact_info" />
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Cancel" />
     </form>
   </body>
 </html>
