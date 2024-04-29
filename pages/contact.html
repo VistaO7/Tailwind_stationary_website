@@ -4,13 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Matias Delgado" />
+    <meta name="description" content="Contact page for John Doe & Co." />
     <meta
-      name="description"
-      content="Services | John Doe & Co. Construction Experts"
+      name="keywords"
+      content="contact, construction, john, doe, contractor, wood"
     />
-    <meta name="keywords" content="construction, john, doe, contractor, wood" />
-    <title>Home | John Doe & Co.</title>
+    <title>Contact | John Doe & Co.</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="./index.html"
+        ><img src="./images/company_logo.PNG" alt="Company Logo"
+      /></a>
+      <a href="./pages/about.html">ABOUT</a>
+      <a href="./pages/services.html">SERVICES</a>
+      <a href="./pages/contact.html">CONTACT</a>
+    </nav>
+    <h1>Contact form</h1>
+    <!--Non functional code, just to showcase css, and tailwind-->
+    <form action="">
+      <label for="type">I am a:</label>
+      <select id="type" name="type">
+        <option value="none" hidden selected disabled>
+          Please select an option
+        </option>
+        <option value="ho">Homeowner</option>
+        <option value="bo">Business Owner</option>
+        <option value="pm">Property Manager</option>
+        <option value="rs">Real State Agent</option>
+      </select>
+      <br />
+      <h2>Construction Type</h2>
+      <input type="radio" id="hr" name="construction_type" />
+      <label for="hr">I want to renovate a building</label>
+      <input type="radio" id="hc" name="construction_type" />
+      <label for="hc">I want to construct a building</label>
+      <input type="radio" id="other" name="construction_type" />
+      <label for="other">I want to do another type of edification:</label>
+      <input type="text" name="construction_type" />
+      <h2>Contact Information</h2>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="contact_info" />
+      <label for="tel">Cellphone</label>
+      <input type="tel" id="tel" name="contact_info" />
+    </form>
+  </body>
 </html>
