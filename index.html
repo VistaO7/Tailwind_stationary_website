@@ -14,20 +14,23 @@
   </head>
   <body>
     <hgroup>
-      <nav class="fixed flex flex-wrap bg-white h-16 w-full justify-center items-center">
-          <a href="./index.html" class="basis-1/2 flex-auto h-full"
-            ><img src="./images/company_logo.PNG" alt="Company Logo" class="mx-auto min-w-0 h-full"
-          /></a>
-          <a href="./pages/about.html" class="flex-auto">ABOUT</a>
-          <a href="./pages/services.html" class="flex-auto">SERVICES</a>
-          <a href="./pages/contact.html" class="flex-auto">CONTACT</a>
+      <nav
+        class="sticky top-0 flex flex-wrap bg-white h-16 w-full py-2 justify-center items-center text-sm md:text-lg font-medium text-slate-600"
+      >
+        <a href="./index.html" class="basis-1/3 flex-auto h-full"
+          ><img
+            src="./images/company_logo.PNG"
+            alt="Company Logo"
+            class="mx-auto min-w-0 h-full"
+        /></a>
+        <a href="./pages/about.html" class="flex-auto text-center">ABOUT</a>
+        <a href="./pages/services.html" class="flex-auto text-center"
+          >SERVICES</a
+        >
+        <a href="./pages/contact.html" class="flex-auto text-center">CONTACT</a>
       </nav>
       <header>
-        <img
-          src="./images/init_img1.jpg"
-          alt="Two workers overseeing a construction site"
-        />
-        <img
+        <!--<img
           src="./images/init_img2.jpg"
           alt="Our friend James moving some 2 by 4"
         />
@@ -35,10 +38,19 @@
           src="./images/init_img3.jpg"
           alt="The guys are not following OSHA instructions"
         />
-        <img src="./images/init_img4.jpg" alt="He's going to burn himself" />
-        <div>
-          <h1>John Doe & Co.</h1>
-          <h2>Specialists in construction</h2>
+        <img src="./images/init_img4.jpg" alt="He's going to burn himself" /> -->
+        <div
+          style="background-image: url(./images/init_img1.jpg)"
+          class="py-6 bg-cover"
+        >
+          <h1
+            class="text-center text-4xl text-slate-200 overline decoration-2 font-bold"
+          >
+            John Doe & Co.
+          </h1>
+          <h2 class="my-2 text-center text-xl text-stone-600">
+            Specialists in construction
+          </h2>
           <p>
             At John Doe & Co., we are dedicated to delivering excellence in
             construction services.
